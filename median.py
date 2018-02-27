@@ -2,8 +2,8 @@
 
 A min heap and a max heap (two user-defined "Heap" objects) are used to store the numbers in relative order.
 
-To test the algorithm's functionality against an existing set of solutions, one may provide command-line parameters that accept a file that provides input for the sequence and a file that contains solutions,
-the expected lines of output that correspond to the input:
+To test the algorithm's functionality against an existing set of solutions, one may provide command-line arguments
+that accept a file that provides input for the sequence and a file that contains solutions, the expected lines of output that correspond to the input:
 
     median.py -i <inputfile> -o <outputfile>
 
@@ -19,30 +19,30 @@ import getopt
 class Heap:
 
     def __init__(self, prop):
-        self._data = [0]
         self._prop = prop
         self._root = None
+        self._data = [0]
         self._size = 0
-
-    @property
-    def root(self):
-        if self.size:
-            self._root = self.get(1)
-        return self._root
-
-    @property
-    def data(self):
-        if self.size:
-            return self._data[1:]
-        return []
 
     @property
     def prop(self):
         return self._prop
 
     @property
+    def root(self):
+        if self.size:
+            self._root = self.get(1)
+            return self._root
+
+    @property
+    def data(self):
+        if self.size:
+            return self._data[1:]
+            return []
+
+    @property
     def size(self):
-        self._size = len(self._data) - 1
+        self._size = len(self.data)
         return self._size
 
     def get(self, index):
@@ -58,22 +58,22 @@ class Heap:
         self._data.append(node)
         prop = self.prop.swapcase()
 
-        c_i = self.size
-        p_i = c_i >> 1
-        child = self.get(c_i)
-        parent = self.get(p_i)
+        c_index = self.size
+        p_index = c_index >> 1
+        child = self.get(c_index)
+        parent = self.get(p_index)
 
         print '\n%s: ADDING %d...\n' % (prop, child)
 
-        while c_i > 1:
+        while c_index > 1:
             if self.unheapified(child, parent):
                 print 'SWAPPING %d and PARENT %d...' % (child, parent)
-                self.set(c_i, parent)
-                self.set(p_i, child)
-                c_i = p_i
-                p_i = c_i >> 1
-                child = self.get(c_i)
-                parent = self.get(p_i)
+                self.set(c_index, parent)
+                self.set(p_index, child)
+                c_index = p_index
+                p_index = c_index >> 1
+                child = self.get(c_index)
+                parent = self.get(p_index)
             else:
                 break
 
@@ -86,24 +86,24 @@ class Heap:
             print '\n%s: DELETING ROOT %d...\n' % (prop, self.root)
             self.set(1, self._data.pop())
 
-        c_i = 2
-        p_i = 1
-        l_i = self.size + 1
+        c_index = 2
+        p_index = 1
+        l_index = self.size + 1
 
-        while c_i < l_i:
-            child = self.get(c_i)
-            parent = self.get(p_i)
+        while c_index < l_index:
+            child = self.get(c_index)
+            parent = self.get(p_index)
 
-            if c_i+1 < l_i and self.unheapified(self.get(c_i+1), child):
-                c_i += 1
-                child = self.get(c_i)
+            if c_index+1 < l_index and self.unheapified(self.get(c_index+1), child):
+                c_index += 1
+                child = self.get(c_index)
 
             if self.unheapified(child, parent):
                 print 'SWAPPING %d and PARENT %d...' % (child, parent)
-                self.set(c_i, parent)
-                self.set(p_i, child)
-                p_i = c_i
-                c_i = p_i << 1
+                self.set(c_index, parent)
+                self.set(p_index, child)
+                p_index = c_index
+                c_index = p_index << 1
             else:
                 break
 
@@ -127,6 +127,7 @@ def build_heaps(in_file=None, out_file=None):
     MaxHeap = Heap('max')
     testing = True if in_file else False
 
+
     if testing:
         with open(in_file, 'r') as i, open(out_file, 'r') as o:
             in_lines = i.readlines()
@@ -136,6 +137,8 @@ def build_heaps(in_file=None, out_file=None):
             output = [float(x) for x in out_lines]
     else:
         n = int(raw_input('# OF ELEMENTS: ').strip())
+
+    show_info = raw_input('DISPLAY ALL DATA (HEAP CONTENTS, ROOTS, ETC.)?')
 
     for x in xrange(n):
         new_num = nums[x] if testing else int(raw_input('> ').strip())
