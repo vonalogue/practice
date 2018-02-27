@@ -138,8 +138,6 @@ def build_heaps(in_file=None, out_file=None):
     else:
         n = int(raw_input('# OF ELEMENTS: ').strip())
 
-    show_info = raw_input('DISPLAY ALL DATA (HEAP CONTENTS, ROOTS, ETC.)?')
-
     for x in xrange(n):
         new_num = nums[x] if testing else int(raw_input('> ').strip())
 
