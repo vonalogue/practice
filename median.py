@@ -1,9 +1,9 @@
 """ This returns the running median of a growing sequence of numbers fed by user input.
 
-A min heap and a max heap (two children of a user-defined "Heap" class) are used to store the numbers in relative order.
+A min heap and a max heap (two user-defined "Heap" objects) are used to store the numbers in relative order.
 
-To test the algorithm's functionality against an existing set of solutions, one may provide command-line parameters that accept a file that provides input for the sequence and a file that contains solutions
-(the expected lines of output) that correspond to the input:
+To test the algorithm's functionality against an existing set of solutions, one may provide command-line parameters that accept a file that provides input for the sequence and a file that contains solutions,
+the expected lines of output that correspond to the input:
 
     median.py -i <inputfile> -o <outputfile>
 
