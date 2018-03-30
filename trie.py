@@ -1,62 +1,37 @@
 class Trie:
 
-    __slots__ = ['trie']
+    __slots__ = ['root']
 
     def __init__(self):
-        self.trie = {None: {chr(c): {} for c in xrange(97, 123)}}
-        self.root = self.trie[None]
-        self.end = '_'
+        self.root = {None: {chr(c): {} for c in xrange(97, 123)}}
+        self.end = '_'  # terminating character
 
     def add(self, name):
-        if len(name) < 2:
-            return
-        level = self.root[name[0]]
-        tokens = [name[1:x] for x in xrange(2, len(name)+1)]
-        current = tokens[0]
-
-        for x in xrange(0, len(tokens)):
-            current = tokens[x]
-            if x < len(tokens)-1 and current in level and tokens[x+1] not in level:
-                print '{token} exists'.format(token=current)
-                level = level[current]
-                for t in xrange(x+1, len(tokens)):      # slice the pre-existing prefix off the rest of the tokens
-                    tokens[t] = tokens[t][len(current):]
-            else:
-                level.setdefault(current, {})
-        level[current].setdefault(self.end, {})
-
-        print self.trie
+        level = self.root[None]
+        for c in name:
+            level = level.setdefault(c, {})
+        level.setdefault(self.end, {})
 
     def find(self, name):
-        if len(name) < 2:
-            return 0
-        level = self.root[name[0]]
-        tokens = [name[1:x] for x in xrange(2, len(name)+1)]
-        times_found = 0
+        level = self.root[None]
+        times_found = -1
 
-        # search for the _ terminating character to count supersets
-        def search_ends(level):
-            for token, suffixes in level.iteritems():
-                yield token, suffixes
-                for t, s in search_ends(suffixes):
-                    yield t, s
-
-        for x in xrange(0, len(tokens)):
-            current = tokens[x]
-            if current not in level:
+        for c in name:
+            if c not in level:
                 return 0
+            level = level[c]
+        times_found += 1
 
-            if x < len(tokens)-1 and tokens[x+1] not in level:      # if the next token is nested...
-                    level = level[current]
-                    for t in xrange(x+1, len(tokens)):              # again, slice the pre-existing prefix off the rest of the tokens
-                        tokens[t] = tokens[t][len(current):]
+        # search for terminating character(s) after finding the word
+        def search_ends(level):
+            for letter, branch in level.iteritems():
+                yield letter, branch
+                for l, b in search_ends(branch):
+                    yield l, b
 
-            elif x == len(tokens)-1:
-                    #print 'FOUND {t} IN {lvl}'.format(t=current,lvl=level)
-                    for token, branch in search_ends(level):
-                        if token == self.end:
-                            #print 'END FOUND IN {lvl}'.format(lvl=level)
-                            times_found += 1
+        for letter, branch in search_ends(level):
+            if letter == self.end:
+                times_found += 1
 
         return times_found
 
