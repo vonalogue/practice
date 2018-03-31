@@ -4,6 +4,9 @@ import sys
 
 def merge_sort(arr):
 
+    class Context:
+        count = 0                  # count operations
+
     def merge(*indices):           # indices = first, last, and pivot indices, respectively
         head, tail = indices[0], indices[1]
         pivot = indices[2]
@@ -11,54 +14,58 @@ def merge_sort(arr):
         i = head
         j = pivot+1
         k = 0
-        temp = list(new_arr)
 
         while (i <= pivot and j <= tail):
-            if new_arr[i] < new_arr[j]:
-                temp[k] = new_arr[i]
+            if new[i] <= new[j]:
+                aux[k] = new[i]
                 i += 1
                 k += 1
             else:
-                temp[k] = new_arr[j]
+                aux[k] = new[j]
                 j += 1
                 k += 1
+                Context.count += 1
 
         while (i <= pivot):
-            temp[k] = new_arr[i]
+            aux[k] = new[i]
             i += 1
             k += 1
         while (j <= tail):
-            temp[k] = new_arr[j]
+            aux[k] = new[j]
             j += 1
             k += 1
 
-        print temp
-        print 'head: %d | pivot: %d | tail: %d' % (head, pivot, tail)
+        print '{a}'.format(a=aux)
         for x in xrange(head, tail+1):
-            new_arr[x] = temp[x-head]
+            new[x] = aux[x-head]
+        # end merge
 
-    def split(arr, *indices):      # indices = first and last indices, respectively
+    def split(a, *indices):      # indices = first and last indices, respectively
         head, tail = indices[0], indices[1]
         pivot = (head+tail) / 2
 
         if head < tail:
-            l_sub = arr[head:pivot+1]
-            r_sub = arr[pivot+1:tail+1]
+            l_sub = a[head:pivot+1]
+            r_sub = a[pivot+1:tail+1]
 
             split(l_sub, head, pivot)
             split(r_sub, pivot+1, tail)
             merge(head, tail, pivot)
+        # end split
 
-    new_arr = arr
-    tail = len(new_arr)-1
-    split(new_arr, 0, tail)
+    new = arr
+    aux = list(new)
+    tail = len(new)-1
 
-    return new_arr
+    split(new, 0, tail)
+    print 'Operations: %d' % Context.count
+    return new
+    # end merge_sort
 
 
 if __name__ == "__main__":
-    loops = int(raw_input().strip())
-    for _ in xrange(loops):
+    t = int(raw_input().strip())
+    for _ in xrange(t):
         arr = map(int, raw_input().strip().split(' '))
         result = merge_sort(arr)
         print result
