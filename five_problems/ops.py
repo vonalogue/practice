@@ -22,7 +22,7 @@ def find_seq(it):
             seq = []
             left, right, idx = 0, 0, 0
 
-            while idx < len(Data.NUMS):
+            while idx < len(Data.NUMS)-1:
                 prev_num = left
                 prev_op = op
 
@@ -55,11 +55,11 @@ def find_seq(it):
 
                     if total is None:
                         total = 0
-                        total += int(seq[idx])
+                        total += left
                     if op == '+':
-                        total += int(seq[idx+2])
+                        total += right
                     elif op == '-':
-                        total -= int(seq[idx+2])
+                        total -= right
                 idx += 1
 
             result = ''.join(seq)
