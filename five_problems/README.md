@@ -27,15 +27,15 @@ the algorithm with more operations and overhead.
 Problem #5:
 
 As daunting as it may seem at first, this problem actually warrants a rather digestible solution. In order to realize this, I had to
-concede that this problem is of the NP-complete sort; wWhen you do this, you humbly realize that you can only offer an approximate answer——or 
+concede that this problem is of the NP-complete sort, realizing that you can only offer an approximate answer——or 
 indeed offer an exact answer, but only by  "approximate" means (e.g. a greedy or brute-force algorithm).
 
-The author of the problem purveys a divide-and-conquer approach that involves solving the individual calculations first before "stitching" them
-together by methodically "cycling" through each of the three possible operations.  
+The author of the problem purveys a divide-and-conquer approach that involves solving the individual calculations first before concatenating them
+after cycling through each of the three possible operations.  
 
-However, I chose to generate random numbers to select the next operation, emphasizing the "brute-force" approach. Additionally, I chose to
-put together the combination of operations and numbers first and then iterate through it to perform the operations, caching solutions and
-terminating the algorithm once the total number of possible solutions is reached (eleven in this case).
+However, I chose to generate random numbers to select the next operation, opting for a brute-force approach. I chose to 
+concatenate the numbers and operations first and then iterate through the resulting string to perform the operations, caching solutions and
+terminating the algorithm once the total number of possible solutions is reached.
 
 
   

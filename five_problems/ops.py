@@ -96,6 +96,6 @@ def find_seq(it):
 
 
 if __name__ == '__main__':
-    it = int(raw_input('# of CYCLES: ').strip())
     print '(0 for infinite cycles)'
+    it = int(raw_input('# of CYCLES: ').strip())
     find_seq(it)
