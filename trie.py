@@ -4,7 +4,7 @@ class Trie:
 
     def __init__(self):
         self.root = {None: {chr(c): {} for c in xrange(97, 123)}}
-        self.end = '_'  # terminating character
+        self.end = '_'  # terminating character 
 
     def add(self, name):
         level = self.root[None]

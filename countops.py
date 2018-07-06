@@ -1,4 +1,4 @@
-""" Using increments of 1, 3, and 5, determine how many operations it would take to
+""" Adding increments of 1, 3, and 5, determine how many operations it would take to
 equalize all numbers in a given array (while leaving one arbitrary number unchanged
 per operation).
 """
@@ -62,7 +62,6 @@ def count_ops(arr):
 if __name__ == "__main__":
     t = int(raw_input().strip())
     for _ in xrange(t):
-        #useless_var = int(raw_input().strip())
         arr = map(int, raw_input().strip().split(' '))
         result = count_ops(arr)
         print result
