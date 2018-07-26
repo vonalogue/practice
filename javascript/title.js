@@ -1,3 +1,4 @@
+// Capitalize each word in a string to put it in titular form.
 function titleCase(str) {
     return str.replace(/\S*[^\s]/g, w => w[0].toUpperCase()+w.toLowerCase().substr(1));
 }
