@@ -1,3 +1,4 @@
+// Return a copy of arr split into groups of size's value, splitting any remainder into its own array at the end.
 function chunkArrayInGroups(arr, size) {
     let newArr = [];
     while (arr.length > 0) {
