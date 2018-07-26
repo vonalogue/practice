@@ -1,3 +1,4 @@
+// Truncate a string (str) if its length exceeds num, replacing whatever follows with '...'
 function truncateString(str, num) {
     let newStr = str.slice(0, num);
     if (str.length > num) {
