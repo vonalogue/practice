@@ -1,3 +1,4 @@
+// Return true if a string (str) ends with another (target).
 function confirmEnding(str, target) {
     if (str.slice(-target.length) === target) {
         return true;
