@@ -1,3 +1,4 @@
+// Return true if all characters in string arr[1] occur in arr[0], regardless of case or multiple occurences.   
 function mutation(arr) {
     arr[0] = arr[0].toLowerCase();
     return arr[1].toLowerCase().split('').filter(c => arr[0].indexOf(c) != -1).length == arr[1].length;
