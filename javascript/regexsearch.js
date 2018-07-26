@@ -1,6 +1,11 @@
+/* 
+Simple demonstration of using a regular expression to find words sandwiched within an arbitrary
+number of spaces.
+*/
+
 var data = {
     str: '  Test one  ',
-    regex: /^\s*(.*?)\s*$/
+    regex: /^\s*(.*?)\s*$/g
 };
 
 const { str, regex } = data;
