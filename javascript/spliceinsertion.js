@@ -1,3 +1,4 @@
+// Return a new array that results from insertion of arr1 into arr2 after index n.
 function frankenSplice(arr1, arr2, n) {
     let newArray = arr2.slice();
     newArray.splice(n, 0, ...arr1);
