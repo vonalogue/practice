@@ -37,17 +37,3 @@ console.log(smallestCommon([5, 1]));   // return 60
 console.log(smallestCommon([12,14]));  // return 1092
 console.log(smallestCommon([5,9]));    // return 2520
 console.log(smallestCommon([1,10]));   // return 2520
-
-/*
-Algorithm flowchart
-
-NUMBERS:    1 2 3 4 5
-LCM:        60
-
-iteration   operation           factors used
-1            1*2 = 2             1 2
-2            2*3 = 6             1 2 3
-3            6*2 = 12            1 2 3 (2) <- factor of 4
-4            12*5 = 60           1 2 3 5
-
-*/
