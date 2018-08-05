@@ -1,5 +1,4 @@
-// MIDI program that makes music happen, baby! WOO!
-// (c) 2013 Dennis Golanov
+// MIDI program that makes music happen.
 
 import javax.sound.midi.*;
 import java.util.*;
