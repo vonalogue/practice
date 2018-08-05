@@ -1,0 +1,38 @@
+#title {
+    background-color: black;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+}
+
+#description {
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#survey {
+    padding: 5%;
+}
+
+#survey select, textarea {
+    max-width: 100%;
+}
+
+#survey-form {
+    display: grid;
+    align-content: center;
+    padding: 30px;
+
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 60px;
+    grid-template-areas:
+        "info"
+        "q1"
+        "q2"
+        "q3"
+        "footer";
+    border-width: 2px;
+    border-style: solid;
+    border-color: brown;
+}

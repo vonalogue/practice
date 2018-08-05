@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Anton|Cairo" rel="stylesheet">
+
+        <!--JS scripts-->
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script> <!--jQuery code--> </script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <div id="title"><h1>SITUATION SURVEY</h1></div>
+        <div id="description"><p><em>Whatcha gonna do, pal?</em></p></div>
+
+        <div id="survey">
+            <form id="survey-form" method="post" action="mailto:youremail@youremail.com">
+                <fieldset id="info">
+                    <legend>Who are you? Where can I track you down? Right now?</legend>
+
+                    <label id="name_label" for="name">NAME</label>
+                    <input type="text" id="name" name="name" placeholder="SIGN HERE">
+
+                    <label id="email_label" for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="ex. you@grandfinale.cn">
+
+                    <label id="number_label" for="number">DIGITS</label>
+                    <input type="tel" id="number" name="number" placeholder="ex. 555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </fieldset>
+
+                <fieldset id="q1">
+                    <legend><strong>Question #1</strong><br>
+                        You're in the first face-to-face conversation you've had in ages, and you're already waiting for it to end; if the windbag brings up a subject you know next to nothing about, what do you do or say?
+                    </legend>
+                    <input type="radio" name="one" value="1">You meekly nod your head and draw out a "Yeah" without elaboration, hoping things go well from this point as you feel yourself freeze up.<br>
+                    <input type="radio" name="one" value="2">You feign respect and curiosity by asking the speaker to explain himself in detail — even though you have better shit to do.<br>
+                    <input type="radio" name="one" value="3">In a sudden bout of brazen indifference, you change the subject and scramble for an immediate detail to justify this with.<br>
+                    <input type="radio" name="one" value="4">You blab out your need to run as you check your wrist, which doesn't have a watch — then make a break for it as <em>fast</em> as you can, confusing and suprising the shit out of the person.<br>
+                </fieldset>
+
+                <fieldset id="q2">
+                    <legend><strong>Question #2</strong><br>
+                        Which of the options below best describes — or, at least, <em>reflects</em> — a disreputable thing you've done?
+                    </legend>
+                    <select id="dropdown">
+                        <option>Passive-aggressively ignore someone when spoken to</option>
+                        <option>Invest your professional self-image in a bunch of career-oriented hype</option>
+                        <option>Watch your neighbor struggle to unload cargo without helping him</option>
+                        <option>Break your word about calling people back</option>
+                        <option>Tweak your speech and mannerisms to fit into a group of elitists who secretly despise themselves</option>
+                    </select>
+                </fieldset>
+
+                <fieldset id="q3">
+                    <legend><strong>Question #3</strong><br>
+                    Select one or more of the following things you need to work on.
+                    </legend>
+                    <input type="checkbox" value="1">You need to forgive more (starting with yourself).<br>
+                    <input type="checkbox" value="2">You need to stop being bored half the time.<br>
+                    <input type="checkbox" value="3">You need to do something meaningful with your life.<br>
+                    <input type="checkbox" value="4">You need to read a book.<br>
+                </fieldset>
+
+                <fieldset id="footer">
+                    <legend><strong>Comments?</strong></legend>
+                    <textarea id="comments" rows="4" cols="60" placeholder="Start talking."></textarea>
+                    <button id="submit" type="submit">Submit</button>
+                    </form>
+                </fieldset>
+
+
+            <!--end survey-form-->
+            </form>
+        </div>
+    </body>
+</html>
