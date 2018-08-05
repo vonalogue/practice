@@ -19,12 +19,3 @@ var search = (s, r) => {
 };
 console.log(search(str, regex));
 console.log(str.replace(regex, '$1'));
-
-// Solutions rejected in error (ES6 problems)
-//
-// resultDisplayArray = arr.map(x => `<li class="text-warning">${x}</li>`);
-
-
-// Handy examples of syntax, problem-solving, etc.
-//
-// squaredIntegers.filter(x => x == Math.floor(x)).map(x => x**2);
