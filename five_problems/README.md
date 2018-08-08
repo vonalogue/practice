@@ -20,7 +20,7 @@ the integers can form via concatenation  and then negating the value that `compa
 
 
 However, there is no need for lexical comparison; I  used the modulo operator to isolate the integer by dividing it by (`10^n-1`), where
-n is the number of digits in the integer. This obviates using built-in functions for type-casting, which would anyway saddle
+`n` is the number of digits in the integer. This obviates using built-in functions for type-casting, which would anyway saddle
 the algorithm with more operations and overhead.   
 
 - ### Problem #5:
