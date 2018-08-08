@@ -31,7 +31,7 @@ after cycling through each of the three possible operations.
 
 However, I chose to generate random numbers to select the next operation, opting for a brute-force approach. I chose to 
 concatenate the numbers and operations first and then iterate through the resulting string to perform the operations, caching solutions and
-terminating the algorithm once the total number of possible solutions is reached.
+terminating the algorithm once the total number of possible solutions is reached. For some reason, I can't help but feel unsatisfied somewhat.
 
 
   
