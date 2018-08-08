@@ -1,4 +1,4 @@
-## Five Testy Problems
+# Five Testy Problems
 These files are solutions to the five problems listed on this [website](https://www.shiftedup.com/2015/05/07/five-programming-problems-every-software-engineer-should-be-able-to-solve-in-less-than-1-hour).
 
 Here's the order in which the problems are listed:
@@ -9,7 +9,7 @@ Here's the order in which the problems are listed:
 	4. largest.py
 	5. ops.py
 
-Technical notes on problems 4 and 5:
+## Technical Notes
 
 
 - ### Problem #4: 
