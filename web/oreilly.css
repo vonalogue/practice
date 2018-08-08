@@ -29,13 +29,12 @@
   text-shadow: 2px 2px 15px #66DBFF;
 }
 
-#img-div {
+#main-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 80px;
     margin-bottom: 40px;
-}
-
-#main-imgs {
-    margin: auto;               /* center table */
 }
 
 /* image text */
@@ -64,13 +63,15 @@
     max-width: 100%;
     opacity: 1.0;
     transition: all .6s ease-in-out;
+    flex-shrink: 2;
 }
 
 /* cell for each image */
-#main-imgs td {
+#main-imgs .img-container {
     display: inline-block;      /* conform container to image size */
     overflow: hidden;           /* avoid overlap between image and border */
     position: relative;         /* allow for arbitrary positioning of text overlay */
+    flex-shrink: 2;
 
     max-width: 300px;
     max-height: 180px;
@@ -87,19 +88,19 @@
 }
 
 /* cell glow hover event */
-#main-imgs td:hover {
+#main-imgs .img-container:hover {
     box-shadow: 0px 0px 30px 0px white;
     transition: all .6s ease-in-out;
 }
 
 /* img fade-out hover event */
-#main-imgs td:hover img {
+#main-imgs .img-container:hover img {
     opacity: 0.2;
     transition: all .6s ease-in-out;
 }
 
 /* text fade-in hover event */
-#main-imgs td:hover .img-text {
+#main-imgs .img-container:hover .img-text {
     opacity: 1.0;
     transition: all .6s ease-in-out;
 }
@@ -122,15 +123,23 @@
 }
 
 #info-link #tribute-info {
+  columns: 1 150px;
   font-size: 18px;
   margin-top: 100px;
   color: #3C92C1;
 }
+#info-link #tribute-info p {
+    text-align: justify;
+}
 
-#down-arrow {
-    margin-bottom: 40px;
+#sit-down {
+    margin: 10px;
+    color: white;
     text-align: center;
+    margin-bottom: 40px;
+}
 
+#sit-down #down-arrow {
     font-size: 72px;
     font-style: bold;
     color: red;
