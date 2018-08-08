@@ -1,7 +1,7 @@
 # Branch information
 
 
-###### - practice_problems/
+- ###### practice_problems/
 
 A handful of Python solutions to algorithmic problems along with some experimental "ad hoc" Java code here and there, including that which I wrote to create a simple MIDI program that performs music.
 
