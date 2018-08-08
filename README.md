@@ -7,7 +7,7 @@ practice_problems/javascript/ - As the name implies, these are all short and swe
 
 practice_problems/five_problems/ - Five problems that, according to some guy on the Internet, "every programmer is supposed to solve." I decidedly took on the challenge with the help of Python.
 
-practice_problems/web/ - Contains single-page (satirical) websites that I made as projects to attain my front-end development certification on freeCodeCamp. Don't get offended -- it's not fun.
+practice_problems/web/ - Contains single-page (satirical) websites that I made as projects to attain my front-end development certification on freeCodeCamp. Don't get offended -- it's not fun. Consult the README.MD file for links to the sites on codepen.io.
 
 
 
