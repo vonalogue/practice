@@ -1,2 +1,9 @@
 # practice_problems
-These are solutions to various problems that emphasize the fundamentals of programming, including data structures, algorithms, control flow, design, and more. This repository catalogs my learning experience and approach to solving problems.
+Repository tree
+===============
+
+web/ - Contains single-page (satirical) websites that I made as projects to attain my front-end development certification on freeCodeCamp.
+
+five_problems/ - Five problems that, according to some guy on the Internet, "every programmer" is supposed to solve. I decidedly took on the challenge with the help of Python.
+
+
