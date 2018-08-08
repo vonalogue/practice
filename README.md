@@ -11,7 +11,7 @@ As the name implies, these are all short and sweet JavaScript solutions to a hos
 
 - ###### practice_problems/five_problems/
 
-Five problems that, according to some guy on the Internet, "every programmer is supposed to solve." I decidedly took on the challenge with the help of Python.
+Five problems that, [according to some guy on the Internet](https://www.shiftedup.com/2015/05/07/five-programming-problems-every-software-engineer-should-be-able-to-solve-in-less-than-1-hour), "every programmer is supposed to solve." I decidedly took on the challenge with the help of Python.
 
 
 - ###### practice_problems/web/
