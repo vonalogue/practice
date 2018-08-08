@@ -16,7 +16,7 @@ Five problems that, according to some guy on the Internet, "every programmer is 
 
 - ###### practice_problems/web/
 
-Contains single-page (satirical) websites that I made as projects to attain my front-end development certification on freeCodeCamp. Don't get offended -- it's not fun. Consult the README.MD file for links to the sites on codepen.io.
+Contains single-page (satirical) websites that I made as projects to attain my front-end development certification on freeCodeCamp. Don't get offended -- it's not fun. You can find the sites on my [CodePen] {https://codepen.io/vonalogue/#} page.
 
 
 
