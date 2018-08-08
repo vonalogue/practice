@@ -9,7 +9,7 @@ Here's the order in which the problems are listed:
 	4. largest.py
 	5. ops.py
 
-## Technical Notes
+## Technical notes
 
 
 - ### Problem #4: 
