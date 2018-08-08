@@ -1,4 +1,3 @@
-# practice_problems
 Repository tree
 ===============
 
