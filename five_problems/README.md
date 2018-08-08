@@ -1,3 +1,4 @@
+## Five Testy Problems
 These files are solutions to the five problems listed on this [website](https://www.shiftedup.com/2015/05/07/five-programming-problems-every-software-engineer-should-be-able-to-solve-in-less-than-1-hour).
 
 Here's the order in which the problems are listed:
@@ -11,7 +12,7 @@ Here's the order in which the problems are listed:
 Technical notes on problems 4 and 5:
 
 
-Problem #4: 
+- ### Problem #4: 
 
 The author of these problems mentions the use of string-padding and type-casting for lexical comparison, a technique one may use to solve this problem.
 The author detracted from using padding in favor of simply type-casting two integers to compare as strings, specifically the two possible strings that
@@ -22,7 +23,7 @@ However, there is no need for lexical comparison; I  used the modulo operator to
 n is the number of digits in the integer. This obviates using built-in functions for type-casting, which would anyway saddle
 the algorithm with more operations and overhead.   
 
-Problem #5:
+- ### Problem #5:
 
 As daunting as it may seem at first, this problem actually warrants a comprehensible solution. In order to realize this, I had to concede that this problem is of the NP-complete sort, realizing that you can only offer an approximate answer — or, indeed, offer an exact answer, though only by  "*approximate*" means (e.g. a greedy or brute-force algorithm).
 
