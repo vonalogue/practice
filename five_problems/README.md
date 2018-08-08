@@ -1,8 +1,6 @@
-These files are solutions to the five problems listed on this website: 
+These files are solutions to the five problems listed on this [website](https://www.shiftedup.com/2015/05/07/five-programming-problems-every-software-engineer-should-be-able-to-solve-in-less-than-1-hour).
 
-	https://www.shiftedup.com/2015/05/07/five-programming-problems-every-software-engineer-should-be-able-to-solve-in-less-than-1-hour
-
-Here's a list that shows each problem's solution in order:
+Here's the order in which the problems are listed:
 
 	1. sum.py
 	2. altlists.py
@@ -27,7 +25,7 @@ the algorithm with more operations and overhead.
 Problem #5:
 
 As daunting as it may seem at first, this problem actually warrants a rather digestible solution. In order to realize this, I had to
-concede that this problem is of the NP-complete sort, realizing that you can only offer an approximate answer——or 
+concede that this problem is of the NP-complete sort, realizing that you can only offer an approximate answer — or 
 indeed offer an exact answer, but only by  "approximate" means (e.g. a greedy or brute-force algorithm).
 
 The author of the problem purveys a divide-and-conquer approach that involves solving the individual calculations first before concatenating them
