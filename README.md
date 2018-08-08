@@ -7,7 +7,7 @@ A handful of Python solutions to algorithmic problems along with some experiment
 
 - ###### practice_problems/javascript/
 
-As the name implies, these are all short and sweet JavaScript solutions to a host of algorithmic problems that range from finding the sum of fibonacci numbers in a given range to iterating through different objects and comparing their properties.       
+As the name implies, these are all short and sweet JavaScript solutions to a host of algorithmic problems that range from finding the sum of prime numbers in a given range to iterating through different objects and comparing their properties.       
 
 - ###### practice_problems/five_problems/
 
