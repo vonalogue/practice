@@ -1,4 +1,4 @@
-# Branch information
+# Branch info
 
 
 - ### practice_problems/
