@@ -24,9 +24,7 @@ the algorithm with more operations and overhead.
 
 Problem #5:
 
-As daunting as it may seem at first, this problem actually warrants a rather digestible solution. In order to realize this, I had to
-concede that this problem is of the NP-complete sort, realizing that you can only offer an approximate answer — or 
-indeed offer an exact answer, but only by  "approximate" means (e.g. a greedy or brute-force algorithm).
+As daunting as it may seem at first, this problem actually warrants a comprehensible solution. In order to realize this, I had to concede that this problem is of the NP-complete sort, realizing that you can only offer an approximate answer — or, indeed, offer an exact answer, though only by  "*approximate*" means (e.g. a greedy or brute-force algorithm).
 
 The author of the problem purveys a divide-and-conquer approach that involves solving the individual calculations first before concatenating them
 after cycling through each of the three possible operations.  
