@@ -6,15 +6,13 @@ function convertToRoman(num) {
                         10: ['X', 'L', 'C'],
                         100: ['C', 'D', 'M'],
                         1000: ['M'] };
-
-    var roundDown = (x) => Math.floor(x);
     var romNum = '';
     var chars = '';
     var factor = 0;
 
     for (let d of dec) {
         if (num >= d) {
-            factor = roundDown(num / d);
+            factor = Math.floor(num / d);
             if (factor < 4) {
                 chars = Array(factor + 1).join(numerals[d][0]);
             }
