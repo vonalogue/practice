@@ -13,6 +13,10 @@ Five problems that, [according to some guy on the Internet](https://www.shiftedu
 
 As the name implies, these are all short and sweet JavaScript solutions to a host of intermediate algorithmic problems that range from finding the sum of prime numbers in a given range to iterating through nested objects and comparing their properties.       
 
+- ### practice_problems/javascript/camp_projects
+
+These are the five projects I had to complete in order to receive the JavaScript Algorithms and Data Structures certification from freeCodeCamp.
+
 - ### practice_problems/web/
 
 Contains single-page websites that I made as projects to attain my front-end development certification on freeCodeCamp. You can check out the sites on my [CodePen page](https://codepen.io/vonalogue/#).
