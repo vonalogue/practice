@@ -15,7 +15,7 @@ As the name implies, these are all short and sweet JavaScript solutions to a hos
 
 - ### practice_problems/javascript/camp_projects
 
-These are the five projects I had to complete in order to receive the __JavaScript Algorithms and Data Structures__ certification from freeCodeCamp.
+These are the five projects I had to complete at the end of a series of lessons in order to receive the __JavaScript Algorithms and Data Structures__ certification from freeCodeCamp.
 
 - ### practice_problems/web/
 
