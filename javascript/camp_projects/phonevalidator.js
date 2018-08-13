@@ -1,4 +1,7 @@
-// Check whether a phone number is in valid US format. Inclusion of the country code is optional.
+/* 
+Check whether a phone number is in valid US format. Inclusion of the country code (1) is optional, but it must 
+be correct if included.
+*/
 
 function telephoneCheck(str) {
     const format = /^1?\s?(\d{3}|\(\d{3}\))[-\s]?\d{3}[-\s]?\d{4}$/;
