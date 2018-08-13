@@ -4,7 +4,7 @@ and all available money in the drawer as arguments, respectively.
 
 Determine how much to give back in change and in what denominations; then, return 
 an object that contains the register's status and a two-dimensional array that indicates
-the change to give.
+the change to give back.
 */
 
 function checkCashRegister(price, cash, cid) {
