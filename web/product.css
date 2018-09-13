@@ -1,0 +1,100 @@
+@mixin txt-attr() {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+body {
+	background: linear-gradient(black, #0b093d);
+}
+
+h1 {
+	font-family: 'Cairo', sans-serif;
+	color: white;
+}
+p {
+	font-family: 'Sawarabi Gothic', sans-serif;
+	color: silver;
+	line-height: 100%;
+	font-size: 20px;
+}
+
+#header {
+	text-align: center;
+	margin-bottom: 10%;
+
+}
+#header h1 {
+	text-shadow: 1px 1px 10px silver;
+}
+#header img {
+	margin-top: 4%;
+    max-width: 20%;
+    max-height: 20%;
+}
+
+#header #nav-bar {
+	background: #000080;
+	padding-left: 6%;
+	display: flex;
+    top: 0;
+    flex-direction: row;
+	justify-content: space-around;
+	border-style: double;
+}
+#header #nav-bar a {
+	padding-left: 10px;
+	padding-right: 10px;
+    text-decoration: none;
+	color: black;
+	font-family: 'Cairo', sans-serif;
+	font-size: 1vw;
+	color: cyan;
+}
+#header #nav-bar a:hover {
+    background-color: gold;
+	color: darkblue;
+}
+
+#info {
+	display: grid;
+	margin: 5vw;
+	grid-row-gap: 20px;
+	grid-template-areas:
+		"why"
+		"how"
+		"future";
+}
+
+#why, #future {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+#how {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#video 					{ margin-right: 20%; }
+#why-img, #future-img 	{ margin-left: 20%; size: 10%; }
+
+#email-button {
+	text-align: center;
+}
+
+@media only screen and (max-width: 815px) {
+	#info {
+		display: block;
+		max-width: 100%;
+		margin-top: 3%;
+	}
+	#why, #future, #how, img {
+		display: block;
+	}
+	img {
+		max-width: 100%;
+		left: 0;
+	}
+}

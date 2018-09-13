@@ -1,0 +1,75 @@
+html, main {
+	min-width: 290px;
+	background: #000217;
+	color: silver;
+	font-family: 'Pragati Narrow', serif;
+	margin: 0;
+}
+
+header {
+	font-family: 'Archivo Black', serif;
+	color: gold;
+	border-bottom: 2px double gold;
+	margin-bottom: 2%;
+}
+
+section {
+	margin-bottom: 10%;
+}
+#main-doc h1 {
+	font-size: 4em;
+}
+
+#main-doc p {
+	font-size: 2em;
+}
+
+#nav-bar {
+	position: fixed;
+	background: #090630;
+	border: 3px inset #61663A;
+	padding: 0px 22px 0px 22px;
+	font-size: 2em;
+}
+
+#nav-bar header {
+	color: cyan;
+	border-bottom: 2px inset darkcyan;
+	margin-bottom: 10px;
+}
+#nav-bar h1 {
+	font-size: .75em;
+}
+#nav-bar a {
+	font-family: 'Pragati Narrow', serif;
+
+}
+#nav-bar li {
+	list-style: none;
+}
+
+#main-doc  {
+	position: absolute;
+	left: 400px;
+}
+
+@media only screen and (max-width: 815px) {
+	html, main {
+		font-size: 0.65em;
+	}
+	#nav-bar{
+		position: relative;
+		top:0;
+		width:100%;
+		max-height:100%;
+		z-index: 1;
+	}
+	  #main-doc{
+		position: absolute;
+		left: 0;
+		top: 270px;
+		max-width: 100%;
+		padding: 10px;
+	    margin-top: 25px;
+	  }
+}
