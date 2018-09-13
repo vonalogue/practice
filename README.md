@@ -19,7 +19,7 @@ These are the five projects I had to complete at the end of a series of lessons 
 
 - ### ./web/
 
-Contains single-page websites that I made as projects to obtain my __Responsive Web Design__ certification on freeCodeCamp. You can check out the sites on my [CodePen page](https://codepen.io/vonalogue/#).
+Contains single-page websites that I made as projects to obtain my __Responsive Web Design__ certification on freeCodeCamp. You can check out the sites on my [CodePen](https://codepen.io/vonalogue/#) and [CodeSandbox](https://codesandbox.io/u/vonalogue) pages.
 
 
 
