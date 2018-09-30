@@ -4,11 +4,12 @@ import marked from "marked";
 
 
 const HTMLEXAMPLE = `<div>
-  <h1>HEADER</h1>
-  <h2>Here's a sub-heading.</h2>
+  <h1>HTML PREVIEW</h1>
+  <h2>Enter HTML code above to see it in action.</h2>
+  <br>
   <a target="_blank" href="https://youtube.com"><strong>LINK TO YOUTUBE</strong></a>
   <ul>
-    <li>Here's a list item.</li>
+    <li><strong>Here's a bolded list item.</strong></li>
   </ul>
   <p>Here's an image.</p>
   <img src="https://avatars3.githubusercontent.com/u/5620346?v=4">
