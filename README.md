@@ -13,7 +13,7 @@ Although I managed to solve the first four problems within an hour, the fifth pr
 
 - ### ./javascript/
 
-As the name implies, these are short and sweet JavaScript solutions to a host of intermediate algorithmic problems that range from finding the sum of prime numbers in a given range to iterating through nested objects and comparing their properties.       
+These are JavaScript solutions to a host of intermediate algorithmic problems that range from finding the sum of prime numbers in a given range to iterating through nested objects and comparing their properties.       
 
 - ### ./javascript/camp_projects
 
@@ -23,7 +23,7 @@ These are the five projects I had to complete at the end of a series of lessons 
 
 These are single-page websites that I made as projects to obtain my __Responsive Web Design__ and __Front-End Libraries__ certifications on freeCodeCamp, demonstrating the use of JS/CSS/HTML, React, and Redux.
 
-You can check out the sites on my [CodePen](https://codepen.io/vonalogue/#) and [CodeSandbox](https://codesandbox.io/u/vonalogue) pages.
+You can check out these sites on my [CodePen](https://codepen.io/vonalogue/#) and [CodeSandbox](https://codesandbox.io/u/vonalogue) pages.
 
 
 
