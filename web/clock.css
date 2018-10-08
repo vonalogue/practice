@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+    background: #333333;
+    color:  #cccc00;
+}
+
+.App {
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+}
+
+#break,
+#session {
+  display: inline-block;
+  margin: 10px;
+}
+
+#break-length,
+#session-length {
+  border: 1px solid white;
+  padding: 2px;
+  color: cyan;
+  background: gray;
+}
+
+#time-left {
+  font-size: 2em;
+  color: red;
+}
+
+#time-label {
+    color: gold;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
