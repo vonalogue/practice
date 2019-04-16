@@ -1,4 +1,4 @@
-# Five Problems Every Software Enginner Should Be Able to Solve
+# Five Problems Every Software Engineer Should Be Able to Solve
 These files are solutions to the five problems listed on this [website](https://www.shiftedup.com/2015/05/07/five-programming-problems-every-software-engineer-should-be-able-to-solve-in-less-than-1-hour).
 
 Here's the order in which the problems are listed:
