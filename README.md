@@ -15,13 +15,13 @@ Although I managed to solve the first four problems within an hour, the fifth pr
 
 These are JavaScript solutions to a host of intermediate algorithmic problems that range from finding the sum of prime numbers in a given range to iterating through nested objects and comparing their properties.       
 
-- ### ./javascript/camp_projects
+- ### ./javascript/projects
 
-These are the five projects I had to complete at the end of a series of lessons in order to receive the __JavaScript Algorithms and Data Structures__ certification from freeCodeCamp.
+These are five projects (small programs) I made while studying data structures and algorithms in JavaScript.
 
 - ### ./web/
 
-These are single-page websites that I made as projects to obtain my __Responsive Web Design__ and __Front-End Libraries__ certifications on freeCodeCamp, demonstrating the use of JS/CSS/HTML, React, and Redux.
+These are single-page websites that I made to learn how to use JS/CSS/HTML, React, and Redux.
 
 You can check out these sites on my [CodePen](https://codepen.io/vonalogue/#) and [CodeSandbox](https://codesandbox.io/u/vonalogue) pages.
 
