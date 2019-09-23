@@ -7,7 +7,7 @@ A handful of Python solutions to advanced algorithmic problems (e.g. the reinven
 
 - ### ./five_problems/
 
-Five problems that, [according to some guy on the Internet](https://www.shiftedup.com/2015/05/07/five-programming-problems-every-software-engineer-should-be-able-to-solve-in-less-than-1-hour), evey programmer is supposed to "solve in less than one hour." I decidedly took on the challenge with the help of Python.
+Five problems that, [according to some guy on the Internet](https://www.shiftedup.com/2015/05/07/five-programming-problems-every-software-engineer-should-be-able-to-solve-in-less-than-1-hour), every programmer is supposed to "solve in less than one hour." I decidedly took on the challenge with the help of Python.
 
 Although I managed to solve the first four problems within an hour, the fifth problem's complexity required much more time beyond this time frame.
 
