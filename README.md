@@ -21,7 +21,7 @@ These are five projects (small console programs) I made while studying data stru
 
 - ### ./web/
 
-These are single-page websites that I made to learn how to use JS/CSS/HTML, React, and Redux (although I never used the latter two again).
+These are single-page websites that I made to learn how to use JS/CSS/HTML, React, and Redux (though I never used the latter two again).
 
 You can check out these sites on my [CodePen](https://codepen.io/vonalogue/#) and [CodeSandbox](https://codesandbox.io/u/vonalogue) pages. Don't take any of the humor on these sites seriously.
 
