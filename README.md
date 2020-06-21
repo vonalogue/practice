@@ -17,7 +17,7 @@ These are JavaScript solutions to a host of intermediate algorithmic problems th
 
 - ### ./javascript/camp_projects
 
-These are five projects (small console programs) I made while studying data structures and algorithms in JavaScript on a website that offers problems in a "code camp" format.
+These are five projects (small console programs) I made while studying data structures and algorithms in JavaScript on a website that offers problems in a "code camp" format for free.
 
 - ### ./web/
 
