@@ -3,13 +3,13 @@
 
 - ### ./
 
-A handful of Python solutions to advanced algorithmic problems (e.g. the reinventing of heapsort and mergesort) along with some experimental Java code here and there, including that which I wrote to create a simple (and incomplete) MIDI program that performs music.
+A handful of Python solutions to advanced algorithmic problems (e.g., the reinventing of ``heapsort`` and ``mergesort``) along with some experimental Java code here and there, including that which I wrote to create a simple (though incomplete) MIDI program that performs music.
 
 - ### ./five_problems/
 
 Five problems that, [according to some guy on the Internet](https://www.shiftedup.com/2015/05/07/five-programming-problems-every-software-engineer-should-be-able-to-solve-in-less-than-1-hour), every programmer is supposed to "solve in less than one hour." I decidedly took on the challenge with the help of Python.
 
-Although I managed to solve the first four problems within an hour, the fifth problem's complexity required much more time beyond this time frame.
+Although I managed to solve the first four problems within an hour, the fifth problem's complexity required much more time beyond this time frame. I included written analyses of how I solved the problems.
 
 - ### ./javascript/
 
