@@ -1,4 +1,4 @@
-""" Adding increments of 1, 3, and 5, determine how many operations it would take to
+""" Add increments of 1, 3, and 5 to determine how many operations it would take to
 equalize all numbers in a given array (while leaving one arbitrary number unchanged
 per operation).
 """
