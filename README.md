@@ -3,7 +3,7 @@
 
 - ### ./
 
-A handful of Python solutions to advanced algorithmic problems (e.g., the reinventing of ``heapsort`` and ``mergesort``) along with some experimental Java code here and there, including that which I wrote to create a simple (though incomplete) MIDI program that performs music.
+A handful of Python solutions to advanced algorithmic problems (e.g., reinventing ``heapsort`` and ``mergesort``) along with some experimental Java code here and there, including that which I wrote to create a simple (though incomplete) MIDI program that performs music.
 
 - ### ./five_problems/
 
